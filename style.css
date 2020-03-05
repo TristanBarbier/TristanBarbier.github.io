@@ -1,0 +1,59 @@
+body {
+    background color: #EEEEEE;
+    font-family: Helvetica;
+}
+
+a{
+    text-decoration: none;
+}
+ 
+#container{
+    background-color: white;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    background-color: #84e1e1;
+    color: white;
+    text-align:center;
+    padding: 10px;
+}
+
+#content{
+    padding: 10px;
+}
+
+#nav{
+    width: 180px;
+    float: left;
+}
+
+.selected{
+    font-weight: bold;
+}
+
+#main{
+    width: 600px;
+    float: right;
+}
+
+#footer{
+    clear: both;
+    padding: 10px;
+    background-color: #bfbfbf;
+    color: white;
+}
+
+#example{
+    color: #ff1a1a
+}
+
+#footer1{
+    clear: both;
+    padding: 10px;
+    background-color: #bfbfbf;
+    color: white;
+    text-align-last: center
+}
