@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4339a1f8273e47dd9bed8792046da3ac {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    
+            <style> #vega_lite_8365fd9a61e345cd9b60227c3ea2f341 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    <script src="https://cdn.jsdelivr.net/npm/vega@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3"></script>
+    
+            <style> #vega_lite_72bb501a3c8548339b2cfde04f55f483 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_6ce33537ddd347168375ba470b222e3b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_0e0cfb2269e44b8295f8d8a8784dd665 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_5659e620947a4a5a940164503b61e292 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_cd869e81c9bf4eafb1deb062ac5fd33a {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_ca707fb0704e4b72b366e2c92df02b15 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_cfbd6f1a35cf40c8a60d30a4f613aa05 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_38842e05d8514535b1fbc9094e901884 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_731432bb0d1844c195d7d87d4fb125f8 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_a9b3cc8ff83e42a2838c9c84ceae0ac0 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_d65406de8a644b86b1de52f9024faad8 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_89417fac483a436a823834098d54ade5 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_171cfd44144347faae7803e2a3c98490 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_50af75bdc02f4e079981a99cf8f43168 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_14a633f22ad54a80a61a6871f39fb7fe {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_f3fee484177b4c6eadcc838a5cd46751 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_5dc1fe8c1f674f70bee038f4afb820f8 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_33d14d8fee7e49eb9a4a955e403dd72e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_c8543d1e272a427e86bf27e0ada63ad5 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_0bbb754c090e48fda64b173f5385ba22 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_ae76e0643fac478d84337e7542d33550 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_78e6ee82a3f24c9f956da9e85502c929 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_9ada40dfdc0648a5adc61a4c24e0d9b8 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_249886cde02e492abde8c508f3fa52ae {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_1befdd5406104e24a73987750df46e37 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_23ec4a45bac847fdb039dcad5460dd07 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_52dc3dac59f0456088b7d0f3b045f0e1 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_366998c073c34650969fa4de48919403 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_bed77038318b4857a03d2a9e25f7fd04 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_d652f96c4a6141e99782bd10593bbb4c {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_2b2614ad722841cb9b9d23f7fed0ec9b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_47d0cce390a94baf95ef0339703f8240 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_3ecb9c78395a42bf875f143d05490d8d {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_3f1868f6540046bda4b764e72f8e6498 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_37cee0ef9f43465b84b4e75d08592139 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_e5933fce9b174da2bfd6792b927f77b6 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_0137cd8848b04c27b567060a4a19cd7b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_ecb23877ddd34f1f9385efc2d54da260 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_0fb251003c024ad893623145e37d1a11 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_cc3a878969404454ae5f17fa81c513ed {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_1e276aaea83840aca4b05df4cd6e5898 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_67704a61622b4371b53396ba0339039a {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_b3b5f83422ce403c95d292b9362b6eae {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_17b40107a24345a288740d5487cca6db {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_75a67e98a22d40abbd9de5a8bf1253b1 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_6b8677f91d1743239f2a01b58cc72ebe {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_1cd4f41be70343f98c02602ff13659a7 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_bf37f6765cf54ae3998c9391ea02ee51 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_7d0a9a062ac54c53a7b5364de459bcc2 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_4339a1f8273e47dd9bed8792046da3ac" ></div>
+        
+</body>
+<script>    
+    
+            var map_4339a1f8273e47dd9bed8792046da3ac = L.map(
+                "map_4339a1f8273e47dd9bed8792046da3ac",
+                {
+                    center: [39.572, -97.383],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3fd6525587164c2da256b8e2ef82bb4e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+            var marker_4d22499e69b4423eb358119b0de9b762 = L.marker(
+                [32.6010112, -86.6807365],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_d54a4aab5f364fb7aa89be351e5ef1ca = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_8365fd9a61e345cd9b60227c3ea2f341 = $(`             <div id="vega_lite_8365fd9a61e345cd9b60227c3ea2f341"></div>             `)[0];
+            popup_d54a4aab5f364fb7aa89be351e5ef1ca.setContent(vega_lite_8365fd9a61e345cd9b60227c3ea2f341);
+        
+
+        marker_4d22499e69b4423eb358119b0de9b762.bindPopup(popup_d54a4aab5f364fb7aa89be351e5ef1ca)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_8365fd9a61e345cd9b60227c3ea2f341, {"title": "Alabama", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 50028}, {"ann\u00e9e": "2008", "revenu": 50761}, {"ann\u00e9e": "2009", "revenu": 45789}, {"ann\u00e9e": "2010", "revenu": 46125}, {"ann\u00e9e": "2011", "revenu": 46524}, {"ann\u00e9e": "2012", "revenu": 46494}, {"ann\u00e9e": "2013", "revenu": 43616}, {"ann\u00e9e": "2014", "revenu": 43826}, {"ann\u00e9e": "2015", "revenu": 46053}, {"ann\u00e9e": "2016", "revenu": 48237}, {"ann\u00e9e": "2017", "revenu": 51113}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_8c6ff3787f30411ca77b3848be91d221 = L.marker(
+                [61.3025006, -158.7750198],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_5a6bad48c57140fd9fb57c0d5bae9c08 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_72bb501a3c8548339b2cfde04f55f483 = $(`             <div id="vega_lite_72bb501a3c8548339b2cfde04f55f483"></div>             `)[0];
+            popup_5a6bad48c57140fd9fb57c0d5bae9c08.setContent(vega_lite_72bb501a3c8548339b2cfde04f55f483);
+        
+
+        marker_8c6ff3787f30411ca77b3848be91d221.bindPopup(popup_5a6bad48c57140fd9fb57c0d5bae9c08)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_72bb501a3c8548339b2cfde04f55f483, {"title": "Alaska", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 74657}, {"ann\u00e9e": "2008", "revenu": 73032}, {"ann\u00e9e": "2009", "revenu": 70555}, {"ann\u00e9e": "2010", "revenu": 65178}, {"ann\u00e9e": "2011", "revenu": 62731}, {"ann\u00e9e": "2012", "revenu": 68084}, {"ann\u00e9e": "2013", "revenu": 64439}, {"ann\u00e9e": "2014", "revenu": 70095}, {"ann\u00e9e": "2015", "revenu": 77717}, {"ann\u00e9e": "2016", "revenu": 77351}, {"ann\u00e9e": "2017", "revenu": 72231}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_b9f038d8247f4ba187e652dbf80123c5 = L.marker(
+                [34.1682185, -111.930907],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_16b4d0cbb9c74c50b4355e367d5aeb21 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_6ce33537ddd347168375ba470b222e3b = $(`             <div id="vega_lite_6ce33537ddd347168375ba470b222e3b"></div>             `)[0];
+            popup_16b4d0cbb9c74c50b4355e367d5aeb21.setContent(vega_lite_6ce33537ddd347168375ba470b222e3b);
+        
+
+        marker_b9f038d8247f4ba187e652dbf80123c5.bindPopup(popup_16b4d0cbb9c74c50b4355e367d5aeb21)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_6ce33537ddd347168375ba470b222e3b, {"title": "Arizona", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 55957}, {"ann\u00e9e": "2008", "revenu": 53544}, {"ann\u00e9e": "2009", "revenu": 52385}, {"ann\u00e9e": "2010", "revenu": 52839}, {"ann\u00e9e": "2011", "revenu": 53108}, {"ann\u00e9e": "2012", "revenu": 50325}, {"ann\u00e9e": "2013", "revenu": 53335}, {"ann\u00e9e": "2014", "revenu": 51057}, {"ann\u00e9e": "2015", "revenu": 54062}, {"ann\u00e9e": "2016", "revenu": 58328}, {"ann\u00e9e": "2017", "revenu": 61125}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_4dcd7aafd7b84b5eaf42fb6b16b49d04 = L.marker(
+                [34.7519275, -92.1313784],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_2311b7dbe8674daf8c07eb5d648da414 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_0e0cfb2269e44b8295f8d8a8784dd665 = $(`             <div id="vega_lite_0e0cfb2269e44b8295f8d8a8784dd665"></div>             `)[0];
+            popup_2311b7dbe8674daf8c07eb5d648da414.setContent(vega_lite_0e0cfb2269e44b8295f8d8a8784dd665);
+        
+
+        marker_4dcd7aafd7b84b5eaf42fb6b16b49d04.bindPopup(popup_2311b7dbe8674daf8c07eb5d648da414)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_0e0cfb2269e44b8295f8d8a8784dd665, {"title": "Arkansas", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 48349}, {"ann\u00e9e": "2008", "revenu": 45183}, {"ann\u00e9e": "2009", "revenu": 41847}, {"ann\u00e9e": "2010", "revenu": 43477}, {"ann\u00e9e": "2011", "revenu": 45114}, {"ann\u00e9e": "2012", "revenu": 41735}, {"ann\u00e9e": "2013", "revenu": 42075}, {"ann\u00e9e": "2014", "revenu": 46567}, {"ann\u00e9e": "2015", "revenu": 44282}, {"ann\u00e9e": "2016", "revenu": 46894}, {"ann\u00e9e": "2017", "revenu": 48829}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_9e8181c86ea24f8086e2cff34068aad2 = L.marker(
+                [37.2718745, -119.2704153],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_f761476d72b34e229087e92b75761fef = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_5659e620947a4a5a940164503b61e292 = $(`             <div id="vega_lite_5659e620947a4a5a940164503b61e292"></div>             `)[0];
+            popup_f761476d72b34e229087e92b75761fef.setContent(vega_lite_5659e620947a4a5a940164503b61e292);
+        
+
+        marker_9e8181c86ea24f8086e2cff34068aad2.bindPopup(popup_f761476d72b34e229087e92b75761fef)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_5659e620947a4a5a940164503b61e292, {"title": "California", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 66054}, {"ann\u00e9e": "2008", "revenu": 65071}, {"ann\u00e9e": "2009", "revenu": 64291}, {"ann\u00e9e": "2010", "revenu": 61162}, {"ann\u00e9e": "2011", "revenu": 58292}, {"ann\u00e9e": "2012", "revenu": 60993}, {"ann\u00e9e": "2013", "revenu": 60635}, {"ann\u00e9e": "2014", "revenu": 62693}, {"ann\u00e9e": "2015", "revenu": 65843}, {"ann\u00e9e": "2016", "revenu": 68073}, {"ann\u00e9e": "2017", "revenu": 69759}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_f9ae3fc977804c5ab18b41b1ad4b2bc3 = L.marker(
+                [38.9979339, -105.550567],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_dc2d1979f6ff47f8bc5c53fd61f9a9c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_cd869e81c9bf4eafb1deb062ac5fd33a = $(`             <div id="vega_lite_cd869e81c9bf4eafb1deb062ac5fd33a"></div>             `)[0];
+            popup_dc2d1979f6ff47f8bc5c53fd61f9a9c0.setContent(vega_lite_cd869e81c9bf4eafb1deb062ac5fd33a);
+        
+
+        marker_f9ae3fc977804c5ab18b41b1ad4b2bc3.bindPopup(popup_dc2d1979f6ff47f8bc5c53fd61f9a9c0)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_cd869e81c9bf4eafb1deb062ac5fd33a, {"title": "Colorado", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 72462}, {"ann\u00e9e": "2008", "revenu": 69556}, {"ann\u00e9e": "2009", "revenu": 64057}, {"ann\u00e9e": "2010", "revenu": 67866}, {"ann\u00e9e": "2011", "revenu": 64047}, {"ann\u00e9e": "2012", "revenu": 61242}, {"ann\u00e9e": "2013", "revenu": 66794}, {"ann\u00e9e": "2014", "revenu": 63162}, {"ann\u00e9e": "2015", "revenu": 68906}, {"ann\u00e9e": "2016", "revenu": 72084}, {"ann\u00e9e": "2017", "revenu": 74172}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_2ff5e1f86a594806b039aafd9adf509a = L.marker(
+                [41.5187835, -72.757507],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_b9f50d7544ff40b8969e1bb7905b9a3f = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_ca707fb0704e4b72b366e2c92df02b15 = $(`             <div id="vega_lite_ca707fb0704e4b72b366e2c92df02b15"></div>             `)[0];
+            popup_b9f50d7544ff40b8969e1bb7905b9a3f.setContent(vega_lite_ca707fb0704e4b72b366e2c92df02b15);
+        
+
+        marker_2ff5e1f86a594806b039aafd9adf509a.bindPopup(popup_b9f50d7544ff40b8969e1bb7905b9a3f)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_ca707fb0704e4b72b366e2c92df02b15, {"title": "Connecticut", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 76017}, {"ann\u00e9e": "2008", "revenu": 73823}, {"ann\u00e9e": "2009", "revenu": 74274}, {"ann\u00e9e": "2010", "revenu": 74361}, {"ann\u00e9e": "2011", "revenu": 71452}, {"ann\u00e9e": "2012", "revenu": 68729}, {"ann\u00e9e": "2013", "revenu": 71442}, {"ann\u00e9e": "2014", "revenu": 72719}, {"ann\u00e9e": "2015", "revenu": 75417}, {"ann\u00e9e": "2016", "revenu": 77556}, {"ann\u00e9e": "2017", "revenu": 72781}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_24f72e1e725e438d921c987d6737df3c = L.marker(
+                [39.145251, -75.4189206],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_879d154404d1432ab505b2ab222c2199 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_cfbd6f1a35cf40c8a60d30a4f613aa05 = $(`             <div id="vega_lite_cfbd6f1a35cf40c8a60d30a4f613aa05"></div>             `)[0];
+            popup_879d154404d1432ab505b2ab222c2199.setContent(vega_lite_cfbd6f1a35cf40c8a60d30a4f613aa05);
+        
+
+        marker_24f72e1e725e438d921c987d6737df3c.bindPopup(popup_879d154404d1432ab505b2ab222c2199)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_cfbd6f1a35cf40c8a60d30a4f613aa05, {"title": "Delaware", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 64697}, {"ann\u00e9e": "2008", "revenu": 57867}, {"ann\u00e9e": "2009", "revenu": 59686}, {"ann\u00e9e": "2010", "revenu": 62211}, {"ann\u00e9e": "2011", "revenu": 59704}, {"ann\u00e9e": "2012", "revenu": 52382}, {"ann\u00e9e": "2013", "revenu": 55040}, {"ann\u00e9e": "2014", "revenu": 59619}, {"ann\u00e9e": "2015", "revenu": 59759}, {"ann\u00e9e": "2016", "revenu": 59294}, {"ann\u00e9e": "2017", "revenu": 62318}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_d981a86c2379459994e8919c0d8c99f9 = L.marker(
+                [27.9757279, -83.8330166],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_d12e49b2e97745f69a334e21d450f83b = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_38842e05d8514535b1fbc9094e901884 = $(`             <div id="vega_lite_38842e05d8514535b1fbc9094e901884"></div>             `)[0];
+            popup_d12e49b2e97745f69a334e21d450f83b.setContent(vega_lite_38842e05d8514535b1fbc9094e901884);
+        
+
+        marker_d981a86c2379459994e8919c0d8c99f9.bindPopup(popup_d12e49b2e97745f69a334e21d450f83b)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_38842e05d8514535b1fbc9094e901884, {"title": "Florida", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 54273}, {"ann\u00e9e": "2008", "revenu": 51196}, {"ann\u00e9e": "2009", "revenu": 52261}, {"ann\u00e9e": "2010", "revenu": 49658}, {"ann\u00e9e": "2011", "revenu": 49267}, {"ann\u00e9e": "2012", "revenu": 49279}, {"ann\u00e9e": "2013", "revenu": 50473}, {"ann\u00e9e": "2014", "revenu": 47822}, {"ann\u00e9e": "2015", "revenu": 50518}, {"ann\u00e9e": "2016", "revenu": 52277}, {"ann\u00e9e": "2017", "revenu": 53681}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_1e6a4bfb4d934b74bffe2ab045e8136c = L.marker(
+                [32.6781248, -83.2229757],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_d9987764466a41cfa988a64dffdf1249 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_731432bb0d1844c195d7d87d4fb125f8 = $(`             <div id="vega_lite_731432bb0d1844c195d7d87d4fb125f8"></div>             `)[0];
+            popup_d9987764466a41cfa988a64dffdf1249.setContent(vega_lite_731432bb0d1844c195d7d87d4fb125f8);
+        
+
+        marker_1e6a4bfb4d934b74bffe2ab045e8136c.bindPopup(popup_d9987764466a41cfa988a64dffdf1249)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_731432bb0d1844c195d7d87d4fb125f8, {"title": "Georgia", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 57647}, {"ann\u00e9e": "2008", "revenu": 52762}, {"ann\u00e9e": "2009", "revenu": 49638}, {"ann\u00e9e": "2010", "revenu": 49707}, {"ann\u00e9e": "2011", "revenu": 50216}, {"ann\u00e9e": "2012", "revenu": 51472}, {"ann\u00e9e": "2013", "revenu": 50001}, {"ann\u00e9e": "2014", "revenu": 51362}, {"ann\u00e9e": "2015", "revenu": 52529}, {"ann\u00e9e": "2016", "revenu": 54678}, {"ann\u00e9e": "2017", "revenu": 57016}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_94faa50f24784401bca5a477c6810e37 = L.marker(
+                [20.46, -157.505],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_8c152af8ef8e4d79b9bccc4fd2083072 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_a9b3cc8ff83e42a2838c9c84ceae0ac0 = $(`             <div id="vega_lite_a9b3cc8ff83e42a2838c9c84ceae0ac0"></div>             `)[0];
+            popup_8c152af8ef8e4d79b9bccc4fd2083072.setContent(vega_lite_a9b3cc8ff83e42a2838c9c84ceae0ac0);
+        
+
+        marker_94faa50f24784401bca5a477c6810e37.bindPopup(popup_8c152af8ef8e4d79b9bccc4fd2083072)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_a9b3cc8ff83e42a2838c9c84ceae0ac0, {"title": "Hawaii", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 75876}, {"ann\u00e9e": "2008", "revenu": 70215}, {"ann\u00e9e": "2009", "revenu": 63735}, {"ann\u00e9e": "2010", "revenu": 67084}, {"ann\u00e9e": "2011", "revenu": 64496}, {"ann\u00e9e": "2012", "revenu": 60181}, {"ann\u00e9e": "2013", "revenu": 64725}, {"ann\u00e9e": "2014", "revenu": 73821}, {"ann\u00e9e": "2015", "revenu": 66751}, {"ann\u00e9e": "2016", "revenu": 73684}, {"ann\u00e9e": "2017", "revenu": 73575}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_d7a82fbd3e864e4a9e798bfbbb8481d9 = L.marker(
+                [45.4945756, -114.1424303],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_aceadc3ad86c4222afd81d99785d00a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_d65406de8a644b86b1de52f9024faad8 = $(`             <div id="vega_lite_d65406de8a644b86b1de52f9024faad8"></div>             `)[0];
+            popup_aceadc3ad86c4222afd81d99785d00a3.setContent(vega_lite_d65406de8a644b86b1de52f9024faad8);
+        
+
+        marker_d7a82fbd3e864e4a9e798bfbbb8481d9.bindPopup(popup_aceadc3ad86c4222afd81d99785d00a3)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_d65406de8a644b86b1de52f9024faad8, {"title": "Idaho", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 58291}, {"ann\u00e9e": "2008", "revenu": 54121}, {"ann\u00e9e": "2009", "revenu": 53575}, {"ann\u00e9e": "2010", "revenu": 53012}, {"ann\u00e9e": "2011", "revenu": 51839}, {"ann\u00e9e": "2012", "revenu": 51259}, {"ann\u00e9e": "2013", "revenu": 54563}, {"ann\u00e9e": "2014", "revenu": 55387}, {"ann\u00e9e": "2015", "revenu": 53414}, {"ann\u00e9e": "2016", "revenu": 57782}, {"ann\u00e9e": "2017", "revenu": 60208}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_32dbbc69b6b9423cb492dbdd54f50643 = L.marker(
+                [39.739318, -89.504139],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_0e55ee3755db4147a37825f4b7b31407 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_89417fac483a436a823834098d54ade5 = $(`             <div id="vega_lite_89417fac483a436a823834098d54ade5"></div>             `)[0];
+            popup_0e55ee3755db4147a37825f4b7b31407.setContent(vega_lite_89417fac483a436a823834098d54ade5);
+        
+
+        marker_32dbbc69b6b9423cb492dbdd54f50643.bindPopup(popup_0e55ee3755db4147a37825f4b7b31407)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_89417fac483a436a823834098d54ade5, {"title": "Illinois", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 62228}, {"ann\u00e9e": "2008", "revenu": 60788}, {"ann\u00e9e": "2009", "revenu": 60552}, {"ann\u00e9e": "2010", "revenu": 57156}, {"ann\u00e9e": "2011", "revenu": 55317}, {"ann\u00e9e": "2012", "revenu": 55348}, {"ann\u00e9e": "2013", "revenu": 60285}, {"ann\u00e9e": "2014", "revenu": 56918}, {"ann\u00e9e": "2015", "revenu": 62508}, {"ann\u00e9e": "2016", "revenu": 62706}, {"ann\u00e9e": "2017", "revenu": 64609}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_302b11958d6d4189a5f99a4c4070a975 = L.marker(
+                [39.7662195, -86.441277],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_7fa80bb67559454299a2c631ddf87be3 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_171cfd44144347faae7803e2a3c98490 = $(`             <div id="vega_lite_171cfd44144347faae7803e2a3c98490"></div>             `)[0];
+            popup_7fa80bb67559454299a2c631ddf87be3.setContent(vega_lite_171cfd44144347faae7803e2a3c98490);
+        
+
+        marker_302b11958d6d4189a5f99a4c4070a975.bindPopup(popup_7fa80bb67559454299a2c631ddf87be3)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_171cfd44144347faae7803e2a3c98490, {"title": "Indiana", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 56239}, {"ann\u00e9e": "2008", "revenu": 53094}, {"ann\u00e9e": "2009", "revenu": 50743}, {"ann\u00e9e": "2010", "revenu": 51986}, {"ann\u00e9e": "2011", "revenu": 48547}, {"ann\u00e9e": "2012", "revenu": 49372}, {"ann\u00e9e": "2013", "revenu": 53284}, {"ann\u00e9e": "2014", "revenu": 49812}, {"ann\u00e9e": "2015", "revenu": 53786}, {"ann\u00e9e": "2016", "revenu": 57377}, {"ann\u00e9e": "2017", "revenu": 58873}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_3a0a9205addb47a0ace2395a70bc97e1 = L.marker(
+                [41.9383166, -93.389798],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_629b9bfb38c84a9d938887538108f828 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_50af75bdc02f4e079981a99cf8f43168 = $(`             <div id="vega_lite_50af75bdc02f4e079981a99cf8f43168"></div>             `)[0];
+            popup_629b9bfb38c84a9d938887538108f828.setContent(vega_lite_50af75bdc02f4e079981a99cf8f43168);
+        
+
+        marker_3a0a9205addb47a0ace2395a70bc97e1.bindPopup(popup_629b9bfb38c84a9d938887538108f828)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_50af75bdc02f4e079981a99cf8f43168, {"title": "Iowa", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 57964}, {"ann\u00e9e": "2008", "revenu": 57228}, {"ann\u00e9e": "2009", "revenu": 58091}, {"ann\u00e9e": "2010", "revenu": 55227}, {"ann\u00e9e": "2011", "revenu": 54853}, {"ann\u00e9e": "2012", "revenu": 57163}, {"ann\u00e9e": "2013", "revenu": 57818}, {"ann\u00e9e": "2014", "revenu": 59918}, {"ann\u00e9e": "2015", "revenu": 62965}, {"ann\u00e9e": "2016", "revenu": 60365}, {"ann\u00e9e": "2017", "revenu": 63481}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_e114f58c95f44971b75006f57093415a = L.marker(
+                [38.4987789, -98.3200779],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_fd82e47db4b54c7ebb78302c91d44905 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_14a633f22ad54a80a61a6871f39fb7fe = $(`             <div id="vega_lite_14a633f22ad54a80a61a6871f39fb7fe"></div>             `)[0];
+            popup_fd82e47db4b54c7ebb78302c91d44905.setContent(vega_lite_14a633f22ad54a80a61a6871f39fb7fe);
+        
+
+        marker_e114f58c95f44971b75006f57093415a.bindPopup(popup_fd82e47db4b54c7ebb78302c91d44905)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_14a633f22ad54a80a61a6871f39fb7fe, {"title": "Kansas", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 57477}, {"ann\u00e9e": "2008", "revenu": 54643}, {"ann\u00e9e": "2009", "revenu": 51215}, {"ann\u00e9e": "2010", "revenu": 51897}, {"ann\u00e9e": "2011", "revenu": 50406}, {"ann\u00e9e": "2012", "revenu": 53485}, {"ann\u00e9e": "2013", "revenu": 54266}, {"ann\u00e9e": "2014", "revenu": 55393}, {"ann\u00e9e": "2015", "revenu": 56768}, {"ann\u00e9e": "2016", "revenu": 58032}, {"ann\u00e9e": "2017", "revenu": 57872}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_0bfc8cede70d4ed6b9b9c6205a718d93 = L.marker(
+                [37.8222935, -85.7682399],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_6b679d522b724d5b89b23a7f873f3cd7 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_f3fee484177b4c6eadcc838a5cd46751 = $(`             <div id="vega_lite_f3fee484177b4c6eadcc838a5cd46751"></div>             `)[0];
+            popup_6b679d522b724d5b89b23a7f873f3cd7.setContent(vega_lite_f3fee484177b4c6eadcc838a5cd46751);
+        
+
+        marker_0bfc8cede70d4ed6b9b9c6205a718d93.bindPopup(popup_6b679d522b724d5b89b23a7f873f3cd7)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_f3fee484177b4c6eadcc838a5cd46751, {"title": "Kentucky", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 46757}, {"ann\u00e9e": "2008", "revenu": 46963}, {"ann\u00e9e": "2009", "revenu": 48863}, {"ann\u00e9e": "2010", "revenu": 46313}, {"ann\u00e9e": "2011", "revenu": 43534}, {"ann\u00e9e": "2012", "revenu": 43947}, {"ann\u00e9e": "2013", "revenu": 44435}, {"ann\u00e9e": "2014", "revenu": 44346}, {"ann\u00e9e": "2015", "revenu": 43857}, {"ann\u00e9e": "2016", "revenu": 46345}, {"ann\u00e9e": "2017", "revenu": 51348}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_0d9ed7023e724c65bd4e9f57735bd092 = L.marker(
+                [30.9733766, -91.4299097],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_88cdb3a5865f4a6c9cc78eff5491a060 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_5dc1fe8c1f674f70bee038f4afb820f8 = $(`             <div id="vega_lite_5dc1fe8c1f674f70bee038f4afb820f8"></div>             `)[0];
+            popup_88cdb3a5865f4a6c9cc78eff5491a060.setContent(vega_lite_5dc1fe8c1f674f70bee038f4afb820f8);
+        
+
+        marker_0d9ed7023e724c65bd4e9f57735bd092.bindPopup(popup_88cdb3a5865f4a6c9cc78eff5491a060)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_5dc1fe8c1f674f70bee038f4afb820f8, {"title": "Louisiana", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 48963}, {"ann\u00e9e": "2008", "revenu": 45154}, {"ann\u00e9e": "2009", "revenu": 52035}, {"ann\u00e9e": "2010", "revenu": 44284}, {"ann\u00e9e": "2011", "revenu": 44416}, {"ann\u00e9e": "2012", "revenu": 41806}, {"ann\u00e9e": "2013", "revenu": 41762}, {"ann\u00e9e": "2014", "revenu": 43952}, {"ann\u00e9e": "2015", "revenu": 47515}, {"ann\u00e9e": "2016", "revenu": 43103}, {"ann\u00e9e": "2017", "revenu": 43903}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_3bfebfea9f0d43efa414a7e5f3530f7e = L.marker(
+                [45.2185133, -69.0148656],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_10b0bdf4678d42f5841819df04839d19 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_33d14d8fee7e49eb9a4a955e403dd72e = $(`             <div id="vega_lite_33d14d8fee7e49eb9a4a955e403dd72e"></div>             `)[0];
+            popup_10b0bdf4678d42f5841819df04839d19.setContent(vega_lite_33d14d8fee7e49eb9a4a955e403dd72e);
+        
+
+        marker_3bfebfea9f0d43efa414a7e5f3530f7e.bindPopup(popup_10b0bdf4678d42f5841819df04839d19)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_33d14d8fee7e49eb9a4a955e403dd72e, {"title": "Maine", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 56762}, {"ann\u00e9e": "2008", "revenu": 53902}, {"ann\u00e9e": "2009", "revenu": 54404}, {"ann\u00e9e": "2010", "revenu": 54005}, {"ann\u00e9e": "2011", "revenu": 54279}, {"ann\u00e9e": "2012", "revenu": 52581}, {"ann\u00e9e": "2013", "revenu": 52828}, {"ann\u00e9e": "2014", "revenu": 53595}, {"ann\u00e9e": "2015", "revenu": 52516}, {"ann\u00e9e": "2016", "revenu": 51950}, {"ann\u00e9e": "2017", "revenu": 51664}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_1146cb274ef44072a870467fc73aa75e = L.marker(
+                [38.8063524, -77.2684162],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_c2d55fe703f143c589647bd92b376840 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_c8543d1e272a427e86bf27e0ada63ad5 = $(`             <div id="vega_lite_c8543d1e272a427e86bf27e0ada63ad5"></div>             `)[0];
+            popup_c2d55fe703f143c589647bd92b376840.setContent(vega_lite_c8543d1e272a427e86bf27e0ada63ad5);
+        
+
+        marker_1146cb274ef44072a870467fc73aa75e.bindPopup(popup_c2d55fe703f143c589647bd92b376840)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_c8543d1e272a427e86bf27e0ada63ad5, {"title": "Maryland", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 77782}, {"ann\u00e9e": "2008", "revenu": 72715}, {"ann\u00e9e": "2009", "revenu": 73513}, {"ann\u00e9e": "2010", "revenu": 72336}, {"ann\u00e9e": "2011", "revenu": 75232}, {"ann\u00e9e": "2012", "revenu": 76838}, {"ann\u00e9e": "2013", "revenu": 68787}, {"ann\u00e9e": "2014", "revenu": 78942}, {"ann\u00e9e": "2015", "revenu": 76146}, {"ann\u00e9e": "2016", "revenu": 75346}, {"ann\u00e9e": "2017", "revenu": 81084}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_f228f8b2704b45c3b1a8244380fa3a13 = L.marker(
+                [42.0629398, -71.718067],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_69ee7af045ee4f40b1e9cc1b2f0b69a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_0bbb754c090e48fda64b173f5385ba22 = $(`             <div id="vega_lite_0bbb754c090e48fda64b173f5385ba22"></div>             `)[0];
+            popup_69ee7af045ee4f40b1e9cc1b2f0b69a7.setContent(vega_lite_0bbb754c090e48fda64b173f5385ba22);
+        
+
+        marker_f228f8b2704b45c3b1a8244380fa3a13.bindPopup(popup_69ee7af045ee4f40b1e9cc1b2f0b69a7)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_0bbb754c090e48fda64b173f5385ba22, {"title": "Massachusetts", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 69288}, {"ann\u00e9e": "2008", "revenu": 68845}, {"ann\u00e9e": "2009", "revenu": 68467}, {"ann\u00e9e": "2010", "revenu": 68655}, {"ann\u00e9e": "2011", "revenu": 69156}, {"ann\u00e9e": "2012", "revenu": 68088}, {"ann\u00e9e": "2013", "revenu": 66364}, {"ann\u00e9e": "2014", "revenu": 65454}, {"ann\u00e9e": "2015", "revenu": 70214}, {"ann\u00e9e": "2016", "revenu": 73822}, {"ann\u00e9e": "2017", "revenu": 73227}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_15a489fe72b14182b195203dc9ddf097 = L.marker(
+                [44.9435598, -86.4158049],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_b08b23d27f29473188fbbe4cb0806bb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_ae76e0643fac478d84337e7542d33550 = $(`             <div id="vega_lite_ae76e0643fac478d84337e7542d33550"></div>             `)[0];
+            popup_b08b23d27f29473188fbbe4cb0806bb2.setContent(vega_lite_ae76e0643fac478d84337e7542d33550);
+        
+
+        marker_15a489fe72b14182b195203dc9ddf097.bindPopup(popup_b08b23d27f29473188fbbe4cb0806bb2)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_ae76e0643fac478d84337e7542d33550, {"title": "Michigan", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 58511}, {"ann\u00e9e": "2008", "revenu": 56824}, {"ann\u00e9e": "2009", "revenu": 52677}, {"ann\u00e9e": "2010", "revenu": 52140}, {"ann\u00e9e": "2011", "revenu": 53399}, {"ann\u00e9e": "2012", "revenu": 53498}, {"ann\u00e9e": "2013", "revenu": 51437}, {"ann\u00e9e": "2014", "revenu": 53901}, {"ann\u00e9e": "2015", "revenu": 56083}, {"ann\u00e9e": "2016", "revenu": 58319}, {"ann\u00e9e": "2017", "revenu": 57754}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_714e35e69fdb4519afb970b9629d16ca = L.marker(
+                [46.4418595, -93.3655146],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_be4485162fe34dd59c5bdf33b8daf758 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_78e6ee82a3f24c9f956da9e85502c929 = $(`             <div id="vega_lite_78e6ee82a3f24c9f956da9e85502c929"></div>             `)[0];
+            popup_be4485162fe34dd59c5bdf33b8daf758.setContent(vega_lite_78e6ee82a3f24c9f956da9e85502c929);
+        
+
+        marker_714e35e69fdb4519afb970b9629d16ca.bindPopup(popup_be4485162fe34dd59c5bdf33b8daf758)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_78e6ee82a3f24c9f956da9e85502c929, {"title": "Minnesota", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 68808}, {"ann\u00e9e": "2008", "revenu": 62687}, {"ann\u00e9e": "2009", "revenu": 64242}, {"ann\u00e9e": "2010", "revenu": 58951}, {"ann\u00e9e": "2011", "revenu": 63156}, {"ann\u00e9e": "2012", "revenu": 66098}, {"ann\u00e9e": "2013", "revenu": 64197}, {"ann\u00e9e": "2014", "revenu": 69696}, {"ann\u00e9e": "2015", "revenu": 71114}, {"ann\u00e9e": "2016", "revenu": 71728}, {"ann\u00e9e": "2017", "revenu": 71923}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_d4ced4a3edaa4fc4a2ebccb2cdb53d1a = L.marker(
+                [32.5851062, -89.8772196],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_9fc306ddda384f6b924bfa235fecc203 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_9ada40dfdc0648a5adc61a4c24e0d9b8 = $(`             <div id="vega_lite_9ada40dfdc0648a5adc61a4c24e0d9b8"></div>             `)[0];
+            popup_9fc306ddda384f6b924bfa235fecc203.setContent(vega_lite_9ada40dfdc0648a5adc61a4c24e0d9b8);
+        
+
+        marker_d4ced4a3edaa4fc4a2ebccb2cdb53d1a.bindPopup(popup_9fc306ddda384f6b924bfa235fecc203)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_9ada40dfdc0648a5adc61a4c24e0d9b8, {"title": "Mississippi", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 44182}, {"ann\u00e9e": "2008", "revenu": 41597}, {"ann\u00e9e": "2009", "revenu": 40175}, {"ann\u00e9e": "2010", "revenu": 42996}, {"ann\u00e9e": "2011", "revenu": 44882}, {"ann\u00e9e": "2012", "revenu": 39192}, {"ann\u00e9e": "2013", "revenu": 43056}, {"ann\u00e9e": "2014", "revenu": 36816}, {"ann\u00e9e": "2015", "revenu": 41426}, {"ann\u00e9e": "2016", "revenu": 41983}, {"ann\u00e9e": "2017", "revenu": 43441}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_b8ad0f9e931e421484c1da20d13bae0e = L.marker(
+                [38.3046615, -92.437099],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_3fef392ff6f04ffab6171d903e8d5390 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_249886cde02e492abde8c508f3fa52ae = $(`             <div id="vega_lite_249886cde02e492abde8c508f3fa52ae"></div>             `)[0];
+            popup_3fef392ff6f04ffab6171d903e8d5390.setContent(vega_lite_249886cde02e492abde8c508f3fa52ae);
+        
+
+        marker_b8ad0f9e931e421484c1da20d13bae0e.bindPopup(popup_3fef392ff6f04ffab6171d903e8d5390)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_249886cde02e492abde8c508f3fa52ae, {"title": "Missouri", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 54523}, {"ann\u00e9e": "2008", "revenu": 52544}, {"ann\u00e9e": "2009", "revenu": 55855}, {"ann\u00e9e": "2010", "revenu": 51623}, {"ann\u00e9e": "2011", "revenu": 49998}, {"ann\u00e9e": "2012", "revenu": 53229}, {"ann\u00e9e": "2013", "revenu": 53029}, {"ann\u00e9e": "2014", "revenu": 58695}, {"ann\u00e9e": "2015", "revenu": 61249}, {"ann\u00e9e": "2016", "revenu": 56199}, {"ann\u00e9e": "2017", "revenu": 56885}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_4cf5507233a74837bda9b851d55c0e1e = L.marker(
+                [46.6797995, -110.044783],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_0cdae35f0d6a48b28cf618960844b90c = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_1befdd5406104e24a73987750df46e37 = $(`             <div id="vega_lite_1befdd5406104e24a73987750df46e37"></div>             `)[0];
+            popup_0cdae35f0d6a48b28cf618960844b90c.setContent(vega_lite_1befdd5406104e24a73987750df46e37);
+        
+
+        marker_4cf5507233a74837bda9b851d55c0e1e.bindPopup(popup_0cdae35f0d6a48b28cf618960844b90c)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_1befdd5406104e24a73987750df46e37, {"title": "Montana", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 51738}, {"ann\u00e9e": "2008", "revenu": 48963}, {"ann\u00e9e": "2009", "revenu": 46313}, {"ann\u00e9e": "2010", "revenu": 46511}, {"ann\u00e9e": "2011", "revenu": 43994}, {"ann\u00e9e": "2012", "revenu": 48227}, {"ann\u00e9e": "2013", "revenu": 46516}, {"ann\u00e9e": "2014", "revenu": 52965}, {"ann\u00e9e": "2015", "revenu": 53177}, {"ann\u00e9e": "2016", "revenu": 58302}, {"ann\u00e9e": "2017", "revenu": 59087}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_380a80c27e334157ba7c2a31f93c956a = L.marker(
+                [41.5008195, -99.680902],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_3719df01a01c47cebf2b2f6d4c2c02b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_23ec4a45bac847fdb039dcad5460dd07 = $(`             <div id="vega_lite_23ec4a45bac847fdb039dcad5460dd07"></div>             `)[0];
+            popup_3719df01a01c47cebf2b2f6d4c2c02b6.setContent(vega_lite_23ec4a45bac847fdb039dcad5460dd07);
+        
+
+        marker_380a80c27e334157ba7c2a31f93c956a.bindPopup(popup_3719df01a01c47cebf2b2f6d4c2c02b6)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_23ec4a45bac847fdb039dcad5460dd07, {"title": "Nebraska", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 58279}, {"ann\u00e9e": "2008", "revenu": 57897}, {"ann\u00e9e": "2009", "revenu": 56801}, {"ann\u00e9e": "2010", "revenu": 59157}, {"ann\u00e9e": "2011", "revenu": 60748}, {"ann\u00e9e": "2012", "revenu": 55830}, {"ann\u00e9e": "2013", "revenu": 56679}, {"ann\u00e9e": "2014", "revenu": 58944}, {"ann\u00e9e": "2015", "revenu": 62571}, {"ann\u00e9e": "2016", "revenu": 60651}, {"ann\u00e9e": "2017", "revenu": 59619}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_8685465dff584cf7be7cf06f1b38ad62 = L.marker(
+                [38.502032, -117.0230604],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_791be1265a254842951f2992edca0018 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_52dc3dac59f0456088b7d0f3b045f0e1 = $(`             <div id="vega_lite_52dc3dac59f0456088b7d0f3b045f0e1"></div>             `)[0];
+            popup_791be1265a254842951f2992edca0018.setContent(vega_lite_52dc3dac59f0456088b7d0f3b045f0e1);
+        
+
+        marker_8685465dff584cf7be7cf06f1b38ad62.bindPopup(popup_791be1265a254842951f2992edca0018)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_52dc3dac59f0456088b7d0f3b045f0e1, {"title": "Nevada", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 64067}, {"ann\u00e9e": "2008", "revenu": 62481}, {"ann\u00e9e": "2009", "revenu": 58908}, {"ann\u00e9e": "2010", "revenu": 57688}, {"ann\u00e9e": "2011", "revenu": 51384}, {"ann\u00e9e": "2012", "revenu": 50629}, {"ann\u00e9e": "2013", "revenu": 47823}, {"ann\u00e9e": "2014", "revenu": 51694}, {"ann\u00e9e": "2015", "revenu": 53812}, {"ann\u00e9e": "2016", "revenu": 56623}, {"ann\u00e9e": "2017", "revenu": 56555}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_507130e19e3145318e99c71430b89299 = L.marker(
+                [44.0012306, -71.5799231],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_244173f60eab48a8ab1154183e3100fe = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_366998c073c34650969fa4de48919403 = $(`             <div id="vega_lite_366998c073c34650969fa4de48919403"></div>             `)[0];
+            popup_244173f60eab48a8ab1154183e3100fe.setContent(vega_lite_366998c073c34650969fa4de48919403);
+        
+
+        marker_507130e19e3145318e99c71430b89299.bindPopup(popup_244173f60eab48a8ab1154183e3100fe)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_366998c073c34650969fa4de48919403, {"title": "New Hampshire", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 80088}, {"ann\u00e9e": "2008", "revenu": 75528}, {"ann\u00e9e": "2009", "revenu": 73451}, {"ann\u00e9e": "2010", "revenu": 75077}, {"ann\u00e9e": "2011", "revenu": 71963}, {"ann\u00e9e": "2012", "revenu": 72541}, {"ann\u00e9e": "2013", "revenu": 75174}, {"ann\u00e9e": "2014", "revenu": 76073}, {"ann\u00e9e": "2015", "revenu": 78299}, {"ann\u00e9e": "2016", "revenu": 77991}, {"ann\u00e9e": "2017", "revenu": 74801}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_cc0cf774344740c8a6ad7ae9a886aac3 = L.marker(
+                [40.1430058, -74.7311156],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_b46e73e14b104653a0187ae0f7dac6bd = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_bed77038318b4857a03d2a9e25f7fd04 = $(`             <div id="vega_lite_bed77038318b4857a03d2a9e25f7fd04"></div>             `)[0];
+            popup_b46e73e14b104653a0187ae0f7dac6bd.setContent(vega_lite_bed77038318b4857a03d2a9e25f7fd04);
+        
+
+        marker_cc0cf774344740c8a6ad7ae9a886aac3.bindPopup(popup_b46e73e14b104653a0187ae0f7dac6bd)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_bed77038318b4857a03d2a9e25f7fd04, {"title": "New Jersey", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 71712}, {"ann\u00e9e": "2008", "revenu": 74535}, {"ann\u00e9e": "2009", "revenu": 74189}, {"ann\u00e9e": "2010", "revenu": 70947}, {"ann\u00e9e": "2011", "revenu": 68091}, {"ann\u00e9e": "2012", "revenu": 71336}, {"ann\u00e9e": "2013", "revenu": 65119}, {"ann\u00e9e": "2014", "revenu": 67622}, {"ann\u00e9e": "2015", "revenu": 70728}, {"ann\u00e9e": "2016", "revenu": 69947}, {"ann\u00e9e": "2017", "revenu": 72997}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_cce27832cbc9417f9d5dfbcc5fd219fd = L.marker(
+                [34.1662325, -106.0260685],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_60800eb2b7c04e99b37315e58af3c2ff = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_d652f96c4a6141e99782bd10593bbb4c = $(`             <div id="vega_lite_d652f96c4a6141e99782bd10593bbb4c"></div>             `)[0];
+            popup_60800eb2b7c04e99b37315e58af3c2ff.setContent(vega_lite_d652f96c4a6141e99782bd10593bbb4c);
+        
+
+        marker_cce27832cbc9417f9d5dfbcc5fd219fd.bindPopup(popup_60800eb2b7c04e99b37315e58af3c2ff)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_d652f96c4a6141e99782bd10593bbb4c, {"title": "New Mexico", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 52569}, {"ann\u00e9e": "2008", "revenu": 48052}, {"ann\u00e9e": "2009", "revenu": 49869}, {"ann\u00e9e": "2010", "revenu": 50853}, {"ann\u00e9e": "2011", "revenu": 45856}, {"ann\u00e9e": "2012", "revenu": 46448}, {"ann\u00e9e": "2013", "revenu": 44402}, {"ann\u00e9e": "2014", "revenu": 48388}, {"ann\u00e9e": "2015", "revenu": 46684}, {"ann\u00e9e": "2016", "revenu": 49493}, {"ann\u00e9e": "2017", "revenu": 47855}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_b959173e3527490a87693b023b54e8e6 = L.marker(
+                [40.7056258, -73.97968],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_b75d6f2ffe664bf8a958ab4a36dd83a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_2b2614ad722841cb9b9d23f7fed0ec9b = $(`             <div id="vega_lite_2b2614ad722841cb9b9d23f7fed0ec9b"></div>             `)[0];
+            popup_b75d6f2ffe664bf8a958ab4a36dd83a2.setContent(vega_lite_2b2614ad722841cb9b9d23f7fed0ec9b);
+        
+
+        marker_b959173e3527490a87693b023b54e8e6.bindPopup(popup_b75d6f2ffe664bf8a958ab4a36dd83a2)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_2b2614ad722841cb9b9d23f7fed0ec9b, {"title": "New York", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 58007}, {"ann\u00e9e": "2008", "revenu": 57592}, {"ann\u00e9e": "2009", "revenu": 57513}, {"ann\u00e9e": "2010", "revenu": 56089}, {"ann\u00e9e": "2011", "revenu": 55309}, {"ann\u00e9e": "2012", "revenu": 51467}, {"ann\u00e9e": "2013", "revenu": 56751}, {"ann\u00e9e": "2014", "revenu": 56291}, {"ann\u00e9e": "2015", "revenu": 60017}, {"ann\u00e9e": "2016", "revenu": 62758}, {"ann\u00e9e": "2017", "revenu": 62447}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_3a601164628d448dbdfd7ac050498ab1 = L.marker(
+                [35.2145629, -79.8912675],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_9721feefae6e4c03b0f1615a78554e07 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_47d0cce390a94baf95ef0339703f8240 = $(`             <div id="vega_lite_47d0cce390a94baf95ef0339703f8240"></div>             `)[0];
+            popup_9721feefae6e4c03b0f1615a78554e07.setContent(vega_lite_47d0cce390a94baf95ef0339703f8240);
+        
+
+        marker_3a601164628d448dbdfd7ac050498ab1.bindPopup(popup_9721feefae6e4c03b0f1615a78554e07)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_47d0cce390a94baf95ef0339703f8240, {"title": "North Carolina", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 51573}, {"ann\u00e9e": "2008", "revenu": 48997}, {"ann\u00e9e": "2009", "revenu": 47995}, {"ann\u00e9e": "2010", "revenu": 49384}, {"ann\u00e9e": "2011", "revenu": 49378}, {"ann\u00e9e": "2012", "revenu": 44446}, {"ann\u00e9e": "2013", "revenu": 43434}, {"ann\u00e9e": "2014", "revenu": 48494}, {"ann\u00e9e": "2015", "revenu": 52559}, {"ann\u00e9e": "2016", "revenu": 54920}, {"ann\u00e9e": "2017", "revenu": 50343}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_42a4304e809e4037836b3744ab9ad302 = L.marker(
+                [47.4678819, -100.3022655],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_ca1b9dcafa474e41b725f68801b80702 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_3ecb9c78395a42bf875f143d05490d8d = $(`             <div id="vega_lite_3ecb9c78395a42bf875f143d05490d8d"></div>             `)[0];
+            popup_ca1b9dcafa474e41b725f68801b80702.setContent(vega_lite_3ecb9c78395a42bf875f143d05490d8d);
+        
+
+        marker_42a4304e809e4037836b3744ab9ad302.bindPopup(popup_ca1b9dcafa474e41b725f68801b80702)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_3ecb9c78395a42bf875f143d05490d8d, {"title": "North Dakota", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 55946}, {"ann\u00e9e": "2008", "revenu": 56645}, {"ann\u00e9e": "2009", "revenu": 57351}, {"ann\u00e9e": "2010", "revenu": 57469}, {"ann\u00e9e": "2011", "revenu": 61562}, {"ann\u00e9e": "2012", "revenu": 59649}, {"ann\u00e9e": "2013", "revenu": 55745}, {"ann\u00e9e": "2014", "revenu": 62944}, {"ann\u00e9e": "2015", "revenu": 59406}, {"ann\u00e9e": "2016", "revenu": 61478}, {"ann\u00e9e": "2017", "revenu": 59886}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_642aace1550647dbb066961374a75401 = L.marker(
+                [40.1903624, -82.6692525],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_021b4e6124864613ac1344e9bd70a5fe = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_3f1868f6540046bda4b764e72f8e6498 = $(`             <div id="vega_lite_3f1868f6540046bda4b764e72f8e6498"></div>             `)[0];
+            popup_021b4e6124864613ac1344e9bd70a5fe.setContent(vega_lite_3f1868f6540046bda4b764e72f8e6498);
+        
+
+        marker_642aace1550647dbb066961374a75401.bindPopup(popup_021b4e6124864613ac1344e9bd70a5fe)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_3f1868f6540046bda4b764e72f8e6498, {"title": "Ohio", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 58193}, {"ann\u00e9e": "2008", "revenu": 53567}, {"ann\u00e9e": "2009", "revenu": 52545}, {"ann\u00e9e": "2010", "revenu": 51701}, {"ann\u00e9e": "2011", "revenu": 48768}, {"ann\u00e9e": "2012", "revenu": 47465}, {"ann\u00e9e": "2013", "revenu": 48904}, {"ann\u00e9e": "2014", "revenu": 51454}, {"ann\u00e9e": "2015", "revenu": 55159}, {"ann\u00e9e": "2016", "revenu": 55146}, {"ann\u00e9e": "2017", "revenu": 59768}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_ae392a227a29485f95fee3904b98c07e = L.marker(
+                [35.3097654, -98.7165585],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_7e967eb4e6204f1d8e4130bc01d4494a = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_37cee0ef9f43465b84b4e75d08592139 = $(`             <div id="vega_lite_37cee0ef9f43465b84b4e75d08592139"></div>             `)[0];
+            popup_7e967eb4e6204f1d8e4130bc01d4494a.setContent(vega_lite_37cee0ef9f43465b84b4e75d08592139);
+        
+
+        marker_ae392a227a29485f95fee3904b98c07e.bindPopup(popup_7e967eb4e6204f1d8e4130bc01d4494a)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_37cee0ef9f43465b84b4e75d08592139, {"title": "Oklahoma", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 51218}, {"ann\u00e9e": "2008", "revenu": 52627}, {"ann\u00e9e": "2009", "revenu": 52544}, {"ann\u00e9e": "2010", "revenu": 48565}, {"ann\u00e9e": "2011", "revenu": 52927}, {"ann\u00e9e": "2012", "revenu": 51778}, {"ann\u00e9e": "2013", "revenu": 46142}, {"ann\u00e9e": "2014", "revenu": 48928}, {"ann\u00e9e": "2015", "revenu": 48714}, {"ann\u00e9e": "2016", "revenu": 52039}, {"ann\u00e9e": "2017", "revenu": 55006}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_280106a64a5e496abca405c6e141ec0b = L.marker(
+                [44.1419049, -120.5380993],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_7811807ffd724615b8012c7b15666767 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_e5933fce9b174da2bfd6792b927f77b6 = $(`             <div id="vega_lite_e5933fce9b174da2bfd6792b927f77b6"></div>             `)[0];
+            popup_7811807ffd724615b8012c7b15666767.setContent(vega_lite_e5933fce9b174da2bfd6792b927f77b6);
+        
+
+        marker_280106a64a5e496abca405c6e141ec0b.bindPopup(popup_7811807ffd724615b8012c7b15666767)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_e5933fce9b174da2bfd6792b927f77b6, {"title": "Oregon", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 59538}, {"ann\u00e9e": "2008", "revenu": 59037}, {"ann\u00e9e": "2009", "revenu": 56232}, {"ann\u00e9e": "2010", "revenu": 57014}, {"ann\u00e9e": "2011", "revenu": 56281}, {"ann\u00e9e": "2012", "revenu": 55386}, {"ann\u00e9e": "2013", "revenu": 59348}, {"ann\u00e9e": "2014", "revenu": 61022}, {"ann\u00e9e": "2015", "revenu": 62944}, {"ann\u00e9e": "2016", "revenu": 60407}, {"ann\u00e9e": "2017", "revenu": 64613}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_0975331bd25140edae02f54340cf92c1 = L.marker(
+                [40.9945928, -77.6046984],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_df5e7126b60e4b08b71c8ccb8992856e = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_0137cd8848b04c27b567060a4a19cd7b = $(`             <div id="vega_lite_0137cd8848b04c27b567060a4a19cd7b"></div>             `)[0];
+            popup_df5e7126b60e4b08b71c8ccb8992856e.setContent(vega_lite_0137cd8848b04c27b567060a4a19cd7b);
+        
+
+        marker_0975331bd25140edae02f54340cf92c1.bindPopup(popup_df5e7126b60e4b08b71c8ccb8992856e)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_0137cd8848b04c27b567060a4a19cd7b, {"title": "Pennsylvania", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 57406}, {"ann\u00e9e": "2008", "revenu": 58666}, {"ann\u00e9e": "2009", "revenu": 55172}, {"ann\u00e9e": "2010", "revenu": 54436}, {"ann\u00e9e": "2011", "revenu": 54516}, {"ann\u00e9e": "2012", "revenu": 55518}, {"ann\u00e9e": "2013", "revenu": 56866}, {"ann\u00e9e": "2014", "revenu": 57185}, {"ann\u00e9e": "2015", "revenu": 62483}, {"ann\u00e9e": "2016", "revenu": 62293}, {"ann\u00e9e": "2017", "revenu": 63173}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_cbb51b7775b048f4840f6f825ec63091 = L.marker(
+                [41.5827282, -71.5064508],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_748fc388b3604262aa342def13002a21 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_ecb23877ddd34f1f9385efc2d54da260 = $(`             <div id="vega_lite_ecb23877ddd34f1f9385efc2d54da260"></div>             `)[0];
+            popup_748fc388b3604262aa342def13002a21.setContent(vega_lite_ecb23877ddd34f1f9385efc2d54da260);
+        
+
+        marker_cbb51b7775b048f4840f6f825ec63091.bindPopup(popup_748fc388b3604262aa342def13002a21)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_ecb23877ddd34f1f9385efc2d54da260, {"title": "Rhode Island", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 64248}, {"ann\u00e9e": "2008", "revenu": 60765}, {"ann\u00e9e": "2009", "revenu": 59137}, {"ann\u00e9e": "2010", "revenu": 58164}, {"ann\u00e9e": "2011", "revenu": 53558}, {"ann\u00e9e": "2012", "revenu": 59969}, {"ann\u00e9e": "2013", "revenu": 60935}, {"ann\u00e9e": "2014", "revenu": 60771}, {"ann\u00e9e": "2015", "revenu": 57633}, {"ann\u00e9e": "2016", "revenu": 62851}, {"ann\u00e9e": "2017", "revenu": 66397}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_6ee12839723e45c09acdc802d08f8f5f = L.marker(
+                [33.62505, -80.9470381],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_0b4134f6f03f485398cd5d37b9443a6a = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_0fb251003c024ad893623145e37d1a11 = $(`             <div id="vega_lite_0fb251003c024ad893623145e37d1a11"></div>             `)[0];
+            popup_0b4134f6f03f485398cd5d37b9443a6a.setContent(vega_lite_0fb251003c024ad893623145e37d1a11);
+        
+
+        marker_6ee12839723e45c09acdc802d08f8f5f.bindPopup(popup_0b4134f6f03f485398cd5d37b9443a6a)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_0fb251003c024ad893623145e37d1a11, {"title": "South Carolina", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 52484}, {"ann\u00e9e": "2008", "revenu": 48112}, {"ann\u00e9e": "2009", "revenu": 47073}, {"ann\u00e9e": "2010", "revenu": 46982}, {"ann\u00e9e": "2011", "revenu": 43783}, {"ann\u00e9e": "2012", "revenu": 47493}, {"ann\u00e9e": "2013", "revenu": 46112}, {"ann\u00e9e": "2014", "revenu": 46567}, {"ann\u00e9e": "2015", "revenu": 47968}, {"ann\u00e9e": "2016", "revenu": 55505}, {"ann\u00e9e": "2017", "revenu": 54971}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_ac2efc3350b04cd8b699475ef1199916 = L.marker(
+                [44.2126995, -100.2471641],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_cf336b5329b849d589f6e81964988212 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_cc3a878969404454ae5f17fa81c513ed = $(`             <div id="vega_lite_cc3a878969404454ae5f17fa81c513ed"></div>             `)[0];
+            popup_cf336b5329b849d589f6e81964988212.setContent(vega_lite_cc3a878969404454ae5f17fa81c513ed);
+        
+
+        marker_ac2efc3350b04cd8b699475ef1199916.bindPopup(popup_cf336b5329b849d589f6e81964988212)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_cc3a878969404454ae5f17fa81c513ed, {"title": "South Dakota", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 55013}, {"ann\u00e9e": "2008", "revenu": 58892}, {"ann\u00e9e": "2009", "revenu": 52485}, {"ann\u00e9e": "2010", "revenu": 51099}, {"ann\u00e9e": "2011", "revenu": 51581}, {"ann\u00e9e": "2012", "revenu": 52856}, {"ann\u00e9e": "2013", "revenu": 57394}, {"ann\u00e9e": "2014", "revenu": 54987}, {"ann\u00e9e": "2015", "revenu": 56975}, {"ann\u00e9e": "2016", "revenu": 58685}, {"ann\u00e9e": "2017", "revenu": 56894}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_c547dba262224acf896890128f7ecb56 = L.marker(
+                [35.830521, -85.9785989],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_14aa16b83a944ad48a54292a6ca88244 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_1e276aaea83840aca4b05df4cd6e5898 = $(`             <div id="vega_lite_1e276aaea83840aca4b05df4cd6e5898"></div>             `)[0];
+            popup_14aa16b83a944ad48a54292a6ca88244.setContent(vega_lite_1e276aaea83840aca4b05df4cd6e5898);
+        
+
+        marker_c547dba262224acf896890128f7ecb56.bindPopup(popup_14aa16b83a944ad48a54292a6ca88244)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_1e276aaea83840aca4b05df4cd6e5898, {"title": "Tennessee", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 48823}, {"ann\u00e9e": "2008", "revenu": 45313}, {"ann\u00e9e": "2009", "revenu": 46404}, {"ann\u00e9e": "2010", "revenu": 43481}, {"ann\u00e9e": "2011", "revenu": 46181}, {"ann\u00e9e": "2012", "revenu": 45989}, {"ann\u00e9e": "2013", "revenu": 44795}, {"ann\u00e9e": "2014", "revenu": 45311}, {"ann\u00e9e": "2015", "revenu": 48971}, {"ann\u00e9e": "2016", "revenu": 52448}, {"ann\u00e9e": "2017", "revenu": 55243}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_46574d545cfd4bfa8df0088509a4f7b3 = L.marker(
+                [31.1693363, -100.0768425],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_83e4e3f8dd114c56adfd502968174c08 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_67704a61622b4371b53396ba0339039a = $(`             <div id="vega_lite_67704a61622b4371b53396ba0339039a"></div>             `)[0];
+            popup_83e4e3f8dd114c56adfd502968174c08.setContent(vega_lite_67704a61622b4371b53396ba0339039a);
+        
+
+        marker_46574d545cfd4bfa8df0088509a4f7b3.bindPopup(popup_83e4e3f8dd114c56adfd502968174c08)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_67704a61622b4371b53396ba0339039a, {"title": "Texas", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 54581}, {"ann\u00e9e": "2008", "revenu": 53066}, {"ann\u00e9e": "2009", "revenu": 54373}, {"ann\u00e9e": "2010", "revenu": 53255}, {"ann\u00e9e": "2011", "revenu": 53573}, {"ann\u00e9e": "2012", "revenu": 55542}, {"ann\u00e9e": "2013", "revenu": 55891}, {"ann\u00e9e": "2014", "revenu": 55839}, {"ann\u00e9e": "2015", "revenu": 58432}, {"ann\u00e9e": "2016", "revenu": 59396}, {"ann\u00e9e": "2017", "revenu": 59295}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_597b2005d14c4101ab5bb84cfc7c8f11 = L.marker(
+                [39.4997605, -111.547028],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_bc479e2062d94290ba152d60c2f4cd0e = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_b3b5f83422ce403c95d292b9362b6eae = $(`             <div id="vega_lite_b3b5f83422ce403c95d292b9362b6eae"></div>             `)[0];
+            popup_bc479e2062d94290ba152d60c2f4cd0e.setContent(vega_lite_b3b5f83422ce403c95d292b9362b6eae);
+        
+
+        marker_597b2005d14c4101ab5bb84cfc7c8f11.bindPopup(popup_bc479e2062d94290ba152d60c2f4cd0e)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_b3b5f83422ce403c95d292b9362b6eae, {"title": "Utah", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 63449}, {"ann\u00e9e": "2008", "revenu": 71375}, {"ann\u00e9e": "2009", "revenu": 66994}, {"ann\u00e9e": "2010", "revenu": 63886}, {"ann\u00e9e": "2011", "revenu": 60614}, {"ann\u00e9e": "2012", "revenu": 62403}, {"ann\u00e9e": "2013", "revenu": 66368}, {"ann\u00e9e": "2014", "revenu": 65694}, {"ann\u00e9e": "2015", "revenu": 68556}, {"ann\u00e9e": "2016", "revenu": 68932}, {"ann\u00e9e": "2017", "revenu": 71319}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_4348bec3169e4d0cb95dfefa8ef25a23 = L.marker(
+                [43.8717545, -72.4477828],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_f05cfe4ac94948059f02d62cdd82951d = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_17b40107a24345a288740d5487cca6db = $(`             <div id="vega_lite_17b40107a24345a288740d5487cca6db"></div>             `)[0];
+            popup_f05cfe4ac94948059f02d62cdd82951d.setContent(vega_lite_17b40107a24345a288740d5487cca6db);
+        
+
+        marker_4348bec3169e4d0cb95dfefa8ef25a23.bindPopup(popup_f05cfe4ac94948059f02d62cdd82951d)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_17b40107a24345a288740d5487cca6db, {"title": "Vermont", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 56165}, {"ann\u00e9e": "2008", "revenu": 57872}, {"ann\u00e9e": "2009", "revenu": 59921}, {"ann\u00e9e": "2010", "revenu": 63015}, {"ann\u00e9e": "2011", "revenu": 56648}, {"ann\u00e9e": "2012", "revenu": 59452}, {"ann\u00e9e": "2013", "revenu": 57804}, {"ann\u00e9e": "2014", "revenu": 62922}, {"ann\u00e9e": "2015", "revenu": 61557}, {"ann\u00e9e": "2016", "revenu": 62145}, {"ann\u00e9e": "2017", "revenu": 63805}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_aaee12205ddb4e73a1da82900bc6d606 = L.marker(
+                [38.0033855, -79.4587861],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_2535986d1c5b48f6b8013c23f12d8943 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_75a67e98a22d40abbd9de5a8bf1253b1 = $(`             <div id="vega_lite_75a67e98a22d40abbd9de5a8bf1253b1"></div>             `)[0];
+            popup_2535986d1c5b48f6b8013c23f12d8943.setContent(vega_lite_75a67e98a22d40abbd9de5a8bf1253b1);
+        
+
+        marker_aaee12205ddb4e73a1da82900bc6d606.bindPopup(popup_2535986d1c5b48f6b8013c23f12d8943)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_75a67e98a22d40abbd9de5a8bf1253b1, {"title": "Virginia", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 70115}, {"ann\u00e9e": "2008", "revenu": 70745}, {"ann\u00e9e": "2009", "revenu": 69292}, {"ann\u00e9e": "2010", "revenu": 68017}, {"ann\u00e9e": "2011", "revenu": 68394}, {"ann\u00e9e": "2012", "revenu": 69132}, {"ann\u00e9e": "2013", "revenu": 71272}, {"ann\u00e9e": "2014", "revenu": 68567}, {"ann\u00e9e": "2015", "revenu": 63618}, {"ann\u00e9e": "2016", "revenu": 67882}, {"ann\u00e9e": "2017", "revenu": 71293}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_9f8d00eda08049179305cbce0406a182 = L.marker(
+                [47.007403, -120.735616],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_de68b9f39a1b42ada9ee3a64474da00a = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_6b8677f91d1743239f2a01b58cc72ebe = $(`             <div id="vega_lite_6b8677f91d1743239f2a01b58cc72ebe"></div>             `)[0];
+            popup_de68b9f39a1b42ada9ee3a64474da00a.setContent(vega_lite_6b8677f91d1743239f2a01b58cc72ebe);
+        
+
+        marker_9f8d00eda08049179305cbce0406a182.bindPopup(popup_de68b9f39a1b42ada9ee3a64474da00a)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_6b8677f91d1743239f2a01b58cc72ebe, {"title": "Washington", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 68834}, {"ann\u00e9e": "2008", "revenu": 64634}, {"ann\u00e9e": "2009", "revenu": 69167}, {"ann\u00e9e": "2010", "revenu": 63284}, {"ann\u00e9e": "2011", "revenu": 62096}, {"ann\u00e9e": "2012", "revenu": 66517}, {"ann\u00e9e": "2013", "revenu": 63353}, {"ann\u00e9e": "2014", "revenu": 61222}, {"ann\u00e9e": "2015", "revenu": 69575}, {"ann\u00e9e": "2016", "revenu": 71822}, {"ann\u00e9e": "2017", "revenu": 75418}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_1048e0df849b44649e0b608a3c7879c2 = L.marker(
+                [38.9201705, -80.1816905],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_22e4b640e7f84905a2af3cc9f570de82 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_1cd4f41be70343f98c02602ff13659a7 = $(`             <div id="vega_lite_1cd4f41be70343f98c02602ff13659a7"></div>             `)[0];
+            popup_22e4b640e7f84905a2af3cc9f570de82.setContent(vega_lite_1cd4f41be70343f98c02602ff13659a7);
+        
+
+        marker_1048e0df849b44649e0b608a3c7879c2.bindPopup(popup_22e4b640e7f84905a2af3cc9f570de82)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_1cd4f41be70343f98c02602ff13659a7, {"title": "West Virginia", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 49885}, {"ann\u00e9e": "2008", "revenu": 43363}, {"ann\u00e9e": "2009", "revenu": 46373}, {"ann\u00e9e": "2010", "revenu": 48198}, {"ann\u00e9e": "2011", "revenu": 456846}, {"ann\u00e9e": "2012", "revenu": 46586}, {"ann\u00e9e": "2013", "revenu": 42415}, {"ann\u00e9e": "2014", "revenu": 40994}, {"ann\u00e9e": "2015", "revenu": 44309}, {"ann\u00e9e": "2016", "revenu": 45308}, {"ann\u00e9e": "2017", "revenu": 45392}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_4e9c101e58404d75b0c304f070198ae2 = L.marker(
+                [44.7862968, -89.8267049],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_5bfafbbc228546e7905bd159f664518f = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_bf37f6765cf54ae3998c9391ea02ee51 = $(`             <div id="vega_lite_bf37f6765cf54ae3998c9391ea02ee51"></div>             `)[0];
+            popup_5bfafbbc228546e7905bd159f664518f.setContent(vega_lite_bf37f6765cf54ae3998c9391ea02ee51);
+        
+
+        marker_4e9c101e58404d75b0c304f070198ae2.bindPopup(popup_5bfafbbc228546e7905bd159f664518f)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_bf37f6765cf54ae3998c9391ea02ee51, {"title": "Wisconsin", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 60771}, {"ann\u00e9e": "2008", "revenu": 58436}, {"ann\u00e9e": "2009", "revenu": 58682}, {"ann\u00e9e": "2010", "revenu": 56731}, {"ann\u00e9e": "2011", "revenu": 56862}, {"ann\u00e9e": "2012", "revenu": 56775}, {"ann\u00e9e": "2013", "revenu": 58243}, {"ann\u00e9e": "2014", "revenu": 60198}, {"ann\u00e9e": "2015", "revenu": 57347}, {"ann\u00e9e": "2016", "revenu": 61103}, {"ann\u00e9e": "2017", "revenu": 63451}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            var marker_524a13439d9f4b8fb520a16af6ecb653 = L.marker(
+                [43.000325, -107.5545669],
+                {}
+            ).addTo(map_4339a1f8273e47dd9bed8792046da3ac);
+        
+    
+        var popup_dc9d45b84f274cd5bb69569a308250e4 = L.popup({"maxWidth": "100%"});
+
+        
+            var vega_lite_7d0a9a062ac54c53a7b5364de459bcc2 = $(`             <div id="vega_lite_7d0a9a062ac54c53a7b5364de459bcc2"></div>             `)[0];
+            popup_dc9d45b84f274cd5bb69569a308250e4.setContent(vega_lite_7d0a9a062ac54c53a7b5364de459bcc2);
+        
+
+        marker_524a13439d9f4b8fb520a16af6ecb653.bindPopup(popup_dc9d45b84f274cd5bb69569a308250e4)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_7d0a9a062ac54c53a7b5364de459bcc2, {"title": "Wyoming", "data": {"values": [{"ann\u00e9e": "2007", "revenu": 57769}, {"ann\u00e9e": "2008", "revenu": 60875}, {"ann\u00e9e": "2009", "revenu": 60094}, {"ann\u00e9e": "2010", "revenu": 58816}, {"ann\u00e9e": "2011", "revenu": 59539}, {"ann\u00e9e": "2012", "revenu": 61517}, {"ann\u00e9e": "2013", "revenu": 58709}, {"ann\u00e9e": "2014", "revenu": 57721}, {"ann\u00e9e": "2015", "revenu": 63038}, {"ann\u00e9e": "2016", "revenu": 59073}, {"ann\u00e9e": "2017", "revenu": 57837}]}, "mark": "bar", "encoding": {"x": {"field": "ann\u00e9e", "type": "nominal"}, "y": {"field": "revenu", "type": "quantitative"}}})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+</script>
