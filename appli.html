@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projet de cartographie</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <h1>Projet de cartographie</h1>
+            </div>
+            <div id="content">
+                <div id="main">
+                    <h2>Le projet</h2>
+                    <p>Pendant les "vacances" (merci le Covid-19), notre projet était de faire une application interactive qui utilisait des données CSV (Comma Separated Values) pour produire une carte interactive, avec des graphiques représentant les données de nos tables CSV.</p>
+                    <h2>Mon projet</h2>
+                    <a href="map.html">Mon projet est visible en cliquant ici!</a>
+                    <h3>Explication</h3>
+                    <p>J'ai utilisé le revenu annuel, en moyenne de chaque État américain, et je les ai représentés sur un graphique en utilisant la librairie Python "folium". Ce que cette librairie fait, elle peut créer des cartes interactives, plus ou moins compliqué. Elle prend des tables (CSV par exemple) en entrée puis produit des cartes à partir de ces valeurs.Donc, il me fallait 2 tables: le revenu annuel de chaque État depuis au moins 2007, et les coordonnées GPS de chaque État afin de mettre les graphiques sur la carte correctement. Le problème le plus important était que je ne croyais pas avoir les clés nécessaires sur ma table pour pouvoir faire des graphiques de manière efficace. Mais deux fonctions m'ont permis de prendre le revenu qui était situé dans les clés des années, un par un, afin de produire des graphiques (fait avec une boucle). Cela est fait en utilisant des dictionnaires contenant des listes (donc la table que j'avais), et faire une boucle pour créer un JSON qui me permettrait de faire des graphiques lisibles.</p>
+                    <h2>Les notions importantes</h2>
+                    <h3>L'OpenData</h3>
+                    <p>Le terme Open Data désigne des données auxquelles n’importe qui peut accéder, que tout le monde peut utiliser ou partager. Dnas le cas du revenu mensuel, j'ai pu trouver la table sur <a href="https://www.data.gov/">data.gov</a> et les coordonnes GPS sur <a href="https://public.opendatasoft.com/explore/?sort=modified">public opendatasoft</a>. </p>
+                    <h3>Le standard JSON</h3>
+                    <p>JSON est l'acronyme de Javascript Objet notation. Il s'agit d'un format de fichier open-standard permettant de stocker les données de manière organisée et lisible partout le monde, tout en y facilitant l'accès. Les données sont respresentés en utilisant des "clés" dans les tables, par exemple "years" contiendrait 2007, 2008, 2009, etc...</p>
+                    <h2>Explication d'une des fonctions</h2>
+                    <h3>Telécharger les programmes</h3>
+                    <a href="programmes.zip">Les programmes se trouvent ici</a>
+                    <p>J'ai choisi d'expliquer le programme "table Ops. Py" puisque c'est la première chose que j'ai faite lors de ce projet. Comme tout programme python, j'ai importé les librairies dont j'avais besoin, pour pouvoir réaliser les opérations facilement. J'ai importé mes deux tables, celles de base. Ensuite, je devais réduire ma table pour contenir les données de 2007 à 2017, au lieu de 1984 à 2017. JE devais ensuite avoir une valeur "headers" qui me permettrait de réduire la table. Avec une boucle, j'ai donné les valeurs 2007 à 2017 à "headers". Ensuite, j'ai rajouté le string "State" pour garder les noms de chaque État. En utilisant la fonction "filter Column", j'ai réduit la table aux valeurs correspondantes, les revenus de 2007 à 2017, a le nom de chaque État. Il me manquait juste à combiner les tables, en utilisant une cle qu'ils avaient en commun: les états. </p>
+                </div>
+                <div id="footer">
+                <a href="index.html">Accueil</a>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+</html>
